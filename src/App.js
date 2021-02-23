@@ -1,5 +1,5 @@
 //Views
-import AboutUs from './views/AbouUs'
+import AboutUs from './pages/AbouUs'
 
 function App() {
   return (
