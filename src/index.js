@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Routes from './Routes';
 import GlobalStyle from './components/GlobalStyle'
-import reportWebVitals from './reportWebVitals';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <GlobalStyle/>
-    <App />
+  <React.StrictMode>    
+    <GlobalStyle/>    
+    <Routes/>
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-reportWebVitals();
