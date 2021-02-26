@@ -44,17 +44,29 @@ const OurWork = () => {
         </Link>
       </Movie>
       <Movie>
-        <h2>The Racer</h2>
-        <div className="line"></div>
+        <motion.h2 variants={fade}>The Racer</motion.h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/the-racer">
-          <img src={theracer} alt="theracer"></img>
+          <Hide>
+            <motion.img
+              variants={photoAnim}
+              src={theracer}
+              alt="theracer"
+            ></motion.img>
+          </Hide>
         </Link>
       </Movie>
       <Movie>
-        <h2>Good Times</h2>
-        <div className="line"></div>
+        <motion.h2 variants={fade}>Good Times</motion.h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/good-times">
-          <img src={goodtimes} alt="goodtimes"></img>
+          <Hide>
+            <motion.img
+              variants={photoAnim}
+              src={goodtimes}
+              alt="goodtimes"
+            ></motion.img>
+          </Hide>
         </Link>
       </Movie>
     </Work>
