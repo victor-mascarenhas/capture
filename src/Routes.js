@@ -1,4 +1,5 @@
 import Nav from "./components/Nav";
+import ScrollTop from "./components/ScrollTop";
 
 //Views
 import AboutUs from "./pages/AbouUs";
@@ -17,6 +18,7 @@ function Routes() {
   return (
     <Router history={history}>
       <Nav />
+      <ScrollTop />
       <Route
         render={({ location }) => (
           <AnimatePresence exitBeforeEnter>
